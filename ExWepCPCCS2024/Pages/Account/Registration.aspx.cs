@@ -14,21 +14,24 @@ public partial class Pages_Account_Registration : System.Web.UI.Page
 
     protected void txtName_TextChanged(object sender, EventArgs e)
     {
+        System.Threading.Thread.Sleep(3000);
         int valueMessage = ConnectionClass.ValidUsername(txtName.Text);
         if (valueMessage == 0)
         {
             txtName.Text = "";
-            lblCheck.Text = "This name already used. Please tyr agian";
+            lblCheck.Text = "ชื่อซ้ำจ้าาาาาา กรุณากรอกใหม่นะจ๊ะ";
         }
         else
         {
-            lblCheck.Text = "You can use this name.";
+            lblCheck.Text = "OK ใช้ได้โล้ดดดดด";
         }
     }
 
     protected void btnRegister_Click(object sender, EventArgs e)
     {
         User user = new User(txtName.Text, txtPassword.Text, txtEmail.Text, "users");
-        //To be continue.
+        lblResult.Text = ConnectionClass.RegisterUser(user);
+        txtName.Text = "";
+        txtEmail.Text = "";
     }
 }

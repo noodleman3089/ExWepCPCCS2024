@@ -43,14 +43,14 @@
                 <li><a href="~/index.aspx" runat="server">Shop</a>
                      <ul>
                         <li><a href="~/Pages/Wearable.aspx" runat="server">Reviews</a></li>
-                        <li><a href="~/index.aspx" runat="server">Buy</a></li>
+                        <li><a href="~/Pages/Shop.aspx" runat="server">Buy</a></li>
                     </ul>
                 </li>
                 <li><a href="~/index.aspx" runat="server">About</a></li>
                 <li><a href="~/index.aspx" runat="server">Managment</a>
                      <ul>
                         <li><a href="~/Pages/WearableOverview.aspx" runat="server">Wearable</a></li>
-                        <li><a href="~/index.aspx" runat="server">Users</a></li>
+                        <li><a href="~/Pages/Account/Admin.aspx" runat="server">Users</a></li>
                     </ul>
                 </li>
             </ul>
@@ -58,7 +58,7 @@
 
                 <asp:Label ID="lbllogin" runat="server" ForeColor="White"></asp:Label>
                 <br />
-                <asp:LinkButton ID="btnlinkLogin" runat="server" ForeColor="White">LinkButton</asp:LinkButton>
+                <asp:LinkButton ID="btnlinkLogin" runat="server" ForeColor="White" OnClick="btnlinkLogin_Click">LinkButton</asp:LinkButton>
 
             </div>
         </div>

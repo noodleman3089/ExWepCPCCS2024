@@ -12,7 +12,6 @@ public partial class Pages_Account_Login : System.Web.UI.Page
 
     }
 
-
     protected void btnLogin_Click(object sender, EventArgs e)
     {
         User user = ConnectionClass.LoginUser(txtLogin.Text, txtPassword.Text);
@@ -25,7 +24,7 @@ public partial class Pages_Account_Login : System.Web.UI.Page
         }
         else
         {
-            lblError.Text = "Login Failed";
+            lblError.Text = "Login Failed !!!";
         }
     }
 }

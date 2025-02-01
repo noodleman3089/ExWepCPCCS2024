@@ -11,9 +11,9 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         if (Session["login"] != null)
         {
-            lbllogin.Text = "Welcome " + Session["login"];
+            lbllogin.Text = "Welcame " + Session["login"];
             lbllogin.Visible = true;
-            btnlinkLogin.Text = "LogOut";
+            btnlinkLogin.Text = "Logout";
         }
         else
         {
